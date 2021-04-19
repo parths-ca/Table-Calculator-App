@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/black_board"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:src="@drawable/icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/q"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:ems="16"
+            android:hint="@string/qtext"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:outlineProvider="bounds"
+            android:textAppearance="@style/lable"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/qtext"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/qtext"
+            android:textAppearance="@style/lable"
+            android:textColor="#000000" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/add"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/add"
+            android:contentDescription="@string/add"
+            android:onClick="add" />
+
+        <ImageButton
+            android:id="@+id/sub"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/sub"
+            android:contentDescription="@string/sub"
+            android:onClick="sub" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/multi"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/multi"
+            android:contentDescription="@string/multi"
+            android:onClick="multi" />
+
+        <ImageButton
+            android:id="@+id/div"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/div"
+            android:contentDescription="@string/div"
+            android:onClick="div" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/per"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/per"
+            android:contentDescription="@string/per"
+            android:onClick="per" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:gravity="bottom">
+
+
+        <TextView
+            android:id="@+id/copy"
+            style="@style/copy"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="bottom|center"
+            android:text="@string/copy"></TextView>
+    </RelativeLayout>
+
+</LinearLayout>
